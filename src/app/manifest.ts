@@ -1,0 +1,1 @@
+import type {MetadataRoute} from "next";export default function manifest():MetadataRoute.Manifest{return {name:"CastSprint",short_name:"CastSprint",description:"Mobile screen mirroring for creators",start_url:"/",display:"standalone",background_color:"#050b12",theme_color:"#10bfe5",icons:[{src:"/favicon.ico",sizes:"any",type:"image/x-icon"}]}}

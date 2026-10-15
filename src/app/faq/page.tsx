@@ -1,0 +1,2 @@
+import {FAQ} from "@/components/faq";import {PageHero} from "@/components/page-shell";import {pageMetadata} from "@/lib/site";
+export const metadata=pageMetadata("Frequently asked questions","Answers about CastSprint availability, platforms, OBS workflows, wireless mirroring, and support.","/faq");export default function Page(){return <><PageHero eyebrow="FAQ" title="Good questions. Straight answers." description="What you need to know while CastSprint is under active development."/><section className="content-section container narrow"><FAQ/></section></>}

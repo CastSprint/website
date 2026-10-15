@@ -1,0 +1,2 @@
+import type {MetadataRoute} from "next";import {blogPosts,docPages,siteUrl} from "@/lib/site";
+export default function sitemap():MetadataRoute.Sitemap{const paths=["","/features","/download","/how-it-works","/compatibility","/docs","/blog","/changelog","/faq","/privacy","/contact",...docPages.map(x=>`/docs/${x.slug}`),...blogPosts.map(x=>`/blog/${x.slug}`)];return paths.map((path,i)=>({url:`${siteUrl}${path}`,lastModified:new Date("2026-10-15"),changeFrequency:i===0?"weekly":"monthly",priority:i===0?1:path==="/download"?.9:.7}))}
