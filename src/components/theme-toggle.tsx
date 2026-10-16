@@ -1,3 +1,17 @@
 "use client";
-import {SunMoon} from "lucide-react"; import {useTheme} from "next-themes";
-export function ThemeToggle(){const {theme,setTheme}=useTheme();function cycleTheme(){const current=theme??"system";setTheme(current==="light"?"dark":current==="dark"?"system":"light")}return <button className="icon-button" onClick={cycleTheme} aria-label="Change color theme: light, dark, or system"><SunMoon size={17}/></button>}
+
+import { Laptop, Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+
+const themes = ["light", "dark", "system"] as const;
+
+export function ThemeToggle() {
+  const { theme, setTheme } = useTheme();
+  const current = themes.includes(theme as (typeof themes)[number]) ? theme : "system";
+  const Icon = current === "light" ? Sun : current === "dark" ? Moon : Laptop;
+  function cycleTheme() {
+    const index = themes.indexOf(current as (typeof themes)[number]);
+    setTheme(themes[(index + 1) % themes.length]);
+  }
+  return <button className="icon-button" onClick={cycleTheme} aria-label={`Color theme: ${current}. Activate to change.`} title={`Theme: ${current}`}><Icon size={17} aria-hidden="true" /></button>;
+}
