@@ -22,11 +22,62 @@ export const downloadPlatforms = [
 ] as const;
 
 export const docPages = [
-  { slug: "iphone-usb", title: "iPhone USB mirroring", summary: "Understand the planned wired iPhone workflow and current support status.", group: "Connect" },
-  { slug: "android-usb", title: "Android USB mirroring", summary: "Prepare Android developer settings and a reliable USB connection.", group: "Connect" },
-  { slug: "wifi-mirroring", title: "Wireless mirroring", summary: "Learn the network requirements for Wi-Fi discovery and streaming.", group: "Connect" },
-  { slug: "obs-setup", title: "OBS Studio setup", summary: "Add a mirrored phone to a scene and keep the source framed correctly.", group: "Create" },
-  { slug: "troubleshooting", title: "Troubleshooting", summary: "A practical checklist for connections, audio, rotation, and permissions.", group: "Support" },
+  {
+    slug: "iphone-usb",
+    title: "iPhone USB Screen Mirroring",
+    summary: "Zero-app wired capture on macOS with sub-15ms Metal rendering, and USB Hotspot mode on Windows with WASAPI audio.",
+    group: "Wired Connections",
+    badge: "Zero-App · <15ms",
+    readTime: "6 min",
+  },
+  {
+    slug: "android-usb",
+    title: "Android USB Gaming & ADB",
+    summary: "High-speed USB streaming with reverse port tunneling, 48kHz internal game audio via AudioPlaybackCapture, and locked 60 FPS.",
+    group: "Wired Connections",
+    badge: "ADB Reverse · 60 FPS",
+    readTime: "6 min",
+  },
+  {
+    slug: "wifi-mirroring",
+    title: "Local Wi-Fi & AirPlay Mirroring",
+    summary: "Cable-free streaming over 5GHz Wi-Fi with mDNS discovery, SHA-256 certificate pinning, 6-digit session PINs, and native AirPlay.",
+    group: "Wireless Streaming",
+    badge: "TLS 1.3 · mDNS Discovery",
+    readTime: "5 min",
+  },
+  {
+    slug: "obs-setup",
+    title: "OBS Studio Livestreaming Setup",
+    summary: "Complete guide to zero-copy Window Capture (WGC / ScreenCaptureKit), isolated Application Audio Capture, and aspect ratio framing.",
+    group: "Streaming & Production",
+    badge: "OBS 28+ · Zero-Copy WGC",
+    readTime: "7 min",
+  },
+  {
+    slug: "installation",
+    title: "Installation & Platform Setup",
+    summary: "Installation guide and security verification for macOS DMG, Windows portable x64, Linux PipeWire receiver, and Android companion APK.",
+    group: "Getting Started",
+    badge: "macOS · Win · Linux · Android",
+    readTime: "5 min",
+  },
+  {
+    slug: "troubleshooting",
+    title: "Troubleshooting & Diagnostics",
+    summary: "Step-by-step diagnostic checklist for black screen DRM, ADB authorization, Wi-Fi discovery, audio desync, and firewall issues.",
+    group: "Diagnostics & Support",
+    badge: "Diagnostics Matrix",
+    readTime: "8 min",
+  },
+  {
+    slug: "architecture",
+    title: "Architecture & Latency Benchmarks",
+    summary: "Deep-dive into Protocol V1 framing, hardware AV synchronization, zero-copy Metal/D3D11 rendering, and verified latency benchmarks.",
+    group: "Architecture & Deep-Dive",
+    badge: "Protocol V1 · Benchmarks",
+    readTime: "6 min",
+  },
 ] as const;
 
 export const blogPosts = [
