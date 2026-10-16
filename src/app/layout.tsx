@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { siteUrl } from "@/lib/site";
 import "./globals.css";
+import "./brand.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

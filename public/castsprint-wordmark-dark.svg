@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1350 330" role="img" aria-label="CastSprint">
+<defs><linearGradient id="txt" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#66f7ff"/><stop offset="1" stop-color="#14aaff"/></linearGradient></defs>
+<g transform="translate(9 8) scale(.306)">
+<title id="title">CastSprint app icon</title><desc id="desc">A fast cyan screen mirroring icon with a play arrow on a midnight blue rounded square.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102840"/><stop offset=".46" stop-color="#071526"/><stop offset="1" stop-color="#020a14"/></linearGradient>
+<linearGradient id="neon" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#79F7FF"/><stop offset=".50" stop-color="#06D4FF"/><stop offset="1" stop-color="#137EFF"/></linearGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0f5577" stop-opacity=".75"/><stop offset="1" stop-color="#06162a" stop-opacity=".1"/></linearGradient>
+<filter id="glow" x="-.5" y="-.5" width="2" height="2"><feGaussianBlur stdDeviation="23"/></filter></defs>
+<rect x="36" y="36" width="952" height="952" rx="234" fill="url(#bg)"/>
+<rect x="41" y="41" width="942" height="942" rx="229" fill="none" stroke="url(#neon)" stroke-opacity=".66" stroke-width="10"/>
+<path d="M185 211C285 128 464 107 637 150" fill="none" stroke="#66ddff" stroke-opacity=".23" stroke-width="24" stroke-linecap="round"/>
+<path d="M276 342h110M235 431h100M281 519h54" fill="none" stroke="url(#neon)" stroke-width="33" stroke-linecap="round" opacity=".93"/>
+<g transform="rotate(-3 560 525)">
+<rect x="371" y="280" width="452" height="459" rx="91" fill="#08ccff" opacity=".25" filter="url(#glow)"/>
+<rect x="354" y="255" width="454" height="466" rx="81" fill="url(#glass)" stroke="url(#neon)" stroke-width="37"/>
+<rect x="411" y="311" width="340" height="347" rx="41" fill="#061729"/>
+<path d="M500 393c0-18 19-28 35-19l175 105c16 9 16 29 0 39L535 625c-16 10-35-1-35-19V393z" fill="url(#neon)"/>
+<path d="M446 673h241" fill="none" stroke="#5AEEFF" stroke-width="14" stroke-linecap="round" opacity=".43"/>
+</g>
+<circle cx="764" cy="279" r="17" fill="#83f7ff"/>
+</g>
+<text x="350" y="223" fill="#f6fbff" font-family="Inter,Arial,Helvetica,sans-serif" font-size="177" font-weight="800" letter-spacing="-8">Cast</text>
+<text x="735" y="223" fill="url(#txt)" font-family="Inter,Arial,Helvetica,sans-serif" font-size="177" font-weight="800" letter-spacing="-8">Sprint</text>
+</svg>
