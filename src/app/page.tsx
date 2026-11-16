@@ -49,7 +49,6 @@ export default async function Home() {
     { name: "Windows", detail: "x64 Portable ZIP", asset: win },
     { name: "Linux", detail: "x86_64 PipeWire", asset: linux },
     { name: "Android", detail: "Debug APK", asset: android },
-    { name: "iOS", detail: "In development", asset: undefined },
   ];
 
   const jsonLd = {
