@@ -8,7 +8,6 @@ import {
   Check,
   CheckCircle2,
   Code2,
-  Cpu,
   Download,
   ExternalLink,
   Flame,
@@ -30,6 +29,7 @@ import { ProductPreview } from "@/components/product-preview";
 import { FAQ } from "@/components/faq";
 import { Reveal } from "@/components/reveal";
 import { TerminalInstall } from "@/components/terminal-install";
+import { RustIcon } from "@/components/rust-icon";
 import { getLatestRelease, formatBytes } from "@/lib/github-release";
 import { githubUrl, siteUrl } from "@/lib/site";
 import "./home-redesign.css";
@@ -231,8 +231,8 @@ export default async function Home() {
                 <Check />
                 Sub-15ms Latency
               </span>
-              <span>
-                <Check />
+              <span className="trust-rust">
+                <RustIcon size={16} />
                 Pure Rust Engine
               </span>
             </div>
@@ -312,7 +312,7 @@ export default async function Home() {
             <ShieldCheck size={15} /> Zero Watermarks &amp; Unlimited Sessions
           </div>
           <div className="comparison-pill highlight">
-            <Cpu size={15} /> Pure Rust Core (&lt;30MB RAM)
+            <RustIcon size={15} /> Pure Rust Core (&lt;30MB RAM)
           </div>
         </div>
 
@@ -322,7 +322,11 @@ export default async function Home() {
             <thead>
               <tr>
                 <th>Feature / Capability</th>
-                <th className="featured">👑 CastSprint</th>
+                <th className="featured">
+                  <span style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
+                    👑 CastSprint <RustIcon size={14} />
+                  </span>
+                </th>
                 <th>DouWan (VIP)</th>
                 <th>Scrcpy</th>
                 <th>ApowerMirror</th>
@@ -418,7 +422,7 @@ export default async function Home() {
                 </td>
                 <td className="featured">
                   <span className="badge-pass">
-                    <Cpu size={13} /> &lt;30 MB (Pure Rust Native)
+                    <RustIcon size={13} /> &lt;30 MB (Pure Rust Native)
                   </span>
                 </td>
                 <td>
@@ -568,7 +572,9 @@ export default async function Home() {
             </p>
           </div>
           <div className="comparison-card">
-            <span className="tag">Pure Rust Native</span>
+            <span className="tag" style={{ display: "inline-flex", alignItems: "center", gap: "5px" }}>
+              <RustIcon size={13} /> Pure Rust Native
+            </span>
             <h3>Zero Garbage Collection Pauses</h3>
             <p>
               Unlike 400MB Electron apps that trigger micro-stutters during intense gunfights,
@@ -583,7 +589,9 @@ export default async function Home() {
          ========================================================================== */}
       <section className="section container rust-architecture-section">
         <div className="section-heading-centered">
-          <span className="eyebrow">Pure Rust Architecture</span>
+          <span className="eyebrow" style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
+            <RustIcon size={16} /> Pure Rust Architecture
+          </span>
           <h2>Engineered in Pure Rust: Zero Stutter, Maximum FPS.</h2>
           <p>
             Why does CastSprint outperform commercial mirroring software? Because competitive mobile esports
@@ -593,8 +601,8 @@ export default async function Home() {
 
         <div className="rust-grid">
           <div className="rust-card">
-            <div className="rust-card-icon">
-              <Cpu size={24} />
+            <div className="rust-card-icon" style={{ color: "#f97316" }}>
+              <RustIcon size={26} />
             </div>
             <span className="rust-card-metric">0% Garbage Collection</span>
             <h3>Deterministic Frame Pacing</h3>

@@ -135,6 +135,19 @@
   border-radius: 50%;
 }
 
+.trust-row .trust-rust svg {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  width: 16px;
+  height: 16px;
+  color: #ea580c;
+}
+
+.dark .trust-row .trust-rust svg {
+  color: #f97316;
+}
+
 .hero-beam {
   position: absolute;
   width: 820px;
