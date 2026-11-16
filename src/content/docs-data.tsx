@@ -1,21 +1,10 @@
 import React from "react";
-import Link from "next/link";
 import { CopyButton } from "@/components/copy-button";
 import {
-  Cable,
-  Smartphone,
-  Wifi,
-  MonitorUp,
-  Download,
-  Wrench,
-  Cpu,
   AlertCircle,
-  CheckCircle2,
   HelpCircle,
   Flame,
   Shield,
-  Layers,
-  Sparkles,
 } from "lucide-react";
 
 export interface DocSpec {

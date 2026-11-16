@@ -20,11 +20,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "CastSprint — High-Performance Mobile Screen Mirroring for Creators & Gamers",
+    default: "CastSprint — High-Performance Mobile Screen Mirroring (Rust-Powered, Zero Watermarks)",
     template: "%s — CastSprint",
   },
   description:
-    "Mirror mobile gameplay to desktop with sub-15ms latency, zero watermarks, 48kHz audio sync, and native OBS Studio integration. 100% free and open-source, engineered in pure Rust by TA Shanto.",
+    "Mirror mobile gameplay to PC with sub-15ms latency, zero watermarks, 48kHz audio sync, and native OBS Studio integration. 100% free and open-source DouWan alternative, engineered in pure Rust by TA Shanto.",
   applicationName: "CastSprint",
   category: "technology",
   authors: [{ name: "TA Shanto", url: "https://tashanto.com" }],
@@ -33,16 +33,21 @@ export const metadata: Metadata = {
   keywords: [
     "mobile screen mirroring",
     "phone screen to computer",
-    "OBS mobile gaming",
+    "OBS mobile gaming streaming",
     "USB screen mirroring",
     "open source screen mirroring",
-    "DouWan alternative",
+    "DouWan alternative free",
+    "free DouWan VIP alternative",
+    "Scrcpy alternative with audio",
     "PUBG Mobile screen mirror",
-    "BGMI screen mirror to PC",
-    "Free Fire PC streaming",
+    "BGMI screen mirror to PC without lag",
+    "Free Fire PC streaming OBS",
     "zero watermark screen mirror",
     "sub 15ms screen mirror",
     "Rust screen mirroring",
+    "pure Rust desktop receiver",
+    "WASAPI low latency audio mirror",
+    "ScreenCaptureKit iPhone USB Mac",
     "TA Shanto",
     "CastSprint",
   ],
@@ -53,7 +58,7 @@ export const metadata: Metadata = {
     type: "website",
     url: siteUrl,
     siteName: "CastSprint",
-    title: "CastSprint — High-Performance Mobile Screen Mirroring for Creators & Gamers",
+    title: "CastSprint — High-Performance Mobile Screen Mirroring (Rust-Powered, Zero Watermarks)",
     description:
       "Mirror mobile gameplay to desktop with sub-15ms latency, zero watermarks, 48kHz audio sync, and native OBS Studio pipeline. Engineered in pure Rust by TA Shanto.",
     locale: "en_US",
@@ -62,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CastSprint — Mobile Screen Mirroring for Creators & Gamers",
     description:
-      "Sub-15ms latency, zero watermarks, 48kHz audio sync, and OBS integration. 100% free & open-source, engineered by TA Shanto.",
+      "Sub-15ms latency, zero watermarks, 48kHz audio sync, and OBS integration. 100% free & open-source DouWan alternative, engineered by TA Shanto.",
     creator: "@iamtashanto",
   },
   robots: {

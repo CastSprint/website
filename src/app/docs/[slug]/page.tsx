@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, BookOpen, ExternalLink, HelpCircle } from "lucide-react";
+import { ArrowLeft, BookOpen, ExternalLink, HelpCircle } from "lucide-react";
 import { docPages, pageMetadata, siteUrl, githubUrl } from "@/lib/site";
 import { docsRegistry } from "@/content/docs-data";
 import "../docs.css";
