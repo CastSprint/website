@@ -1,4 +1,4 @@
-﻿# CastSprint Windows Automated Installer
+# CastSprint Windows Automated Installer
 # Usage: irm https://castsprint.app/install.ps1 | iex
 
 $ErrorActionPreference = "Stop"
