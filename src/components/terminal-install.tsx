@@ -8,17 +8,15 @@ const options = [
     id: "bash",
     name: "macOS / Linux",
     badge: "Bash",
-    command: "curl -fsSL 
-https://castsprint.tashanto.com/install.sh | bash",
-      description: "Auto-detects architecture, verifies checksum, and installs binary.",
+    command: "curl -fsSL https://castsprint.tashanto.com/install.sh | bash",
+    description: "Auto-detects architecture, verifies checksum, and installs binary.",
   },
   {
     id: "powershell",
     name: "Windows",
     badge: "PowerShell",
-    command: "irm 
-https://castsprint.tashanto.com/install.ps1 | iex",
-      description: "Downloads x64 release, creates Desktop shortcut, and adds to PATH.",
+    command: "irm https://castsprint.tashanto.com/install.ps1 | iex",
+    description: "Downloads x64 release, creates Desktop shortcut, and adds to PATH.",
   },
   {
     id: "curl",
