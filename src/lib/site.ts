@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://castsprint.app";
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "
+https://castsprint.tashanto.com";
 export const githubUrl = "https://github.com/CastSprint/CastSprint";
 export const navigation = [
   { label: "Features", href: "/features" },

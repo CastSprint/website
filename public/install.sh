@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 # CastSprint Universal Installer (macOS & Linux)
-# Usage: curl -fsSL https://castsprint.app/install.sh | bash
+# Usage: curl -fsSL 
+https://castsprint.tashanto.com/install.sh | bash
 
 set -e
 
@@ -40,7 +41,8 @@ case "$OS" in
     ;;
   *)
     printf "${RED}Unsupported operating system: $OS${NC}\n"
-    printf "Windows users should install via PowerShell: irm https://castsprint.app/install.ps1 | iex\n"
+    printf "Windows users should install via PowerShell: irm 
+https://castsprint.tashanto.com/install.ps1 | iex\n"
     exit 1
     ;;
 esac

